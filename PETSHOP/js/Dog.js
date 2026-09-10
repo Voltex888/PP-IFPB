@@ -1,6 +1,7 @@
 class Dog {
 
     static myself;
+    
     constructor() {
         if (Dog.myself) {
             return Dog.myself;
@@ -9,6 +10,13 @@ class Dog {
         this.life = 500;
         this.isDead = false;
         Dog.myself = this;
+    }
+
+    static instance() {
+        if (!this.myself) {
+            this.myself = new Dog();
+        }
+        return this.myself;
     }
 
     receiveDamage(damage) {

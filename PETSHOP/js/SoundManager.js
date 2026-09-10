@@ -1,8 +1,13 @@
 class SoundManager {
 
+    static myself;
+    
     constructor() {
-        this.deathAudio = new Audio("/audios/dog-death.mp3");
-        this.hitAudio = new Audio("/audios/dog-hit.mp3"); 
+        if (SoundManager.myself) {
+            return SoundManager.myself;
+        }
+        this.deathAudio = new Audio("./audios/dog-death.mp3");
+        this.hitAudio = new Audio("./audios/dog-hit.mp3"); 
+        SoundManager.myself = this;
     }
-
 }
