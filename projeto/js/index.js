@@ -3,10 +3,10 @@ let isPlaying = false;
 let isRecording = false;
 
 function play() {
-    if(isPlaying){
+    if(isPlaying) {
         console.log("Already Playing!!!");
         }
-    else if(isRecording){
+    else if(isRecording) {
         console.log("Cannot play while recording!!!");}
     else {
         isPlaying = true;
@@ -17,10 +17,10 @@ function play() {
 }
 
 function recording() {
-    if(isRecording){
+    if(isRecording) {
         console.log("Already Recording!!!");
     }
-    else if(isPlaying){
+    else if(isPlaying) {
         console.log("Cannot play while playing!!!");}
     else {
         isRecording = true;
@@ -31,10 +31,10 @@ function recording() {
 }
 
 function stop() {
-    if(isStopped){
+    if(isStopped) {
         console.log("Already Stopped!!!");
     }
-    else if(isRecording){
+    else if(isRecording) {
         console.log("Cannot play while recording!!!");}
     else {
         isStopped = true;

@@ -1,7 +1,7 @@
 class State {
     
-    play(){}
-    record(){}
-    stop(){}
+    play() {}
+    record() {}
+    stop() {}
 
 }
